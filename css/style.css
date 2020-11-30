@@ -217,15 +217,16 @@ a {
 .styles-list {
   display: flex;
   margin-top: 0;
-  margin-left: 158px;
+  margin-left: 155px;
   padding-top: 23px;
+  padding-left: 0;
   list-style-type: none;
 }
 
 .styles-item {
   margin-right: 97px;
-  padding-right: 16px;
-  font-family: Open Sans;
+  /* padding-right: 16px; */
+  font-family: 'opensans';
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -233,10 +234,22 @@ a {
   /* text-align: center; */
 
   color: #FFFFFF;
-  background-image: url(../img/hero/selectnone.png);
-  background-position: 100% 28%;
-  background-repeat: no-repeat;
+  /* background-image: url(../img/hero/selectnone.png); */
+  /* background-position: 100% 28%; */
+  /* background-repeat: no-repeat; */
 }
+
+/* .select {
+  outline: none;
+  border: none;
+  background: none;
+  font-family: 'opensans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+} */
 
 .hero-search {
   margin-left: 218px;
