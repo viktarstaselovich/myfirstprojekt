@@ -175,9 +175,11 @@
               class="note-link" href="">авторизуйтесь,</a> либо воспользуйтесь лицензией. </p>
         </div>
         <div class="gallery1920 gallery-right swiper-container">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
+          <div class="navigation-gallery">
+            <div class="swiper-button-prev-editions"></div>
+            <div class="swiper-pagination-editions"></div>
+            <div class="swiper-button-next-editions"></div>
+          </div>
           <div class="swiper-wrapper">
             <ul class="image-list swiper-slide">
               <li class="image-item slide-one"></li>
@@ -207,9 +209,11 @@
         </div>
 
         <div class="gallery1024 gallery-right swiper-container">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
+          <div class="navigation-gallery">
+            <div class="swiper-button-prev-editions"></div>
+            <div class="swiper-pagination-editions"></div>
+            <div class="swiper-button-next-editions"></div>
+          </div>
           <div class="swiper-wrapper">
             <ul class="image-list swiper-slide">
               <li class="image-item slide-one"></li>
@@ -244,9 +248,11 @@
         </div>
 
         <div class="gallery320 gallery-right swiper-container">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
+          <div class="navigation-gallery">
+            <div class="swiper-button-prev-editions"></div>
+            <div class="swiper-pagination-editions"></div>
+            <div class="swiper-button-next-editions"></div>
+          </div>
           <div class="swiper-wrapper">
             <ul class="image-list swiper-slide">
               <li class="image-item slide-one"></li>
@@ -320,17 +326,6 @@
         var mySwiper = new Swiper('.swiper-container', {
           // Optional parameters
           loop: true,
-
-          // If we need pagination
-          pagination: {
-            el: '.swiper-pagination',
-            type: 'fraction',
-            clickable: 'true',
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
         });
       </script>
     </section>
@@ -708,13 +703,542 @@
               <input class="price-input" type="text" placeholder="25000">
               <span class="price-currency">рублей</span>
             </div>
+            <div class="inputs-price-block-320">
+              <span class="price-before-text">От</span>
+              <input class="price-input" type="text" placeholder="50">
+              <span class="price-after-text">до</span>
+              <input class="price-input" type="text" placeholder="25000">
+              <span class="price-currency">руб.</span>
+            </div>
           </div>
         </div>
-        <div class="editions-container-right">
-          <div class="editions-preview-block"> </div>
+        <div class="editions-container-right swiper-container">
+          <div class="navigation-editions">
+            <div class="swiper-button-prev-editions"></div>
+            <div class="swiper-pagination-editions"></div>
+            <div class="swiper-button-next-editions"></div>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-block">
+              <div class="editions-preview-block">
+                <img class="editions-preview-img" src="img/editions/editionsimgone.jpg" alt="">
+                <div class="editions-preview-text">
+                  <div class="editions-preview-name">
+                    <p class="editions-preview-name-item">Искусство цвета</p>
+                    <p class="editions-preview-name-author">Иттен, Иоханнес</p>
+                  </div>
+                  <div class="editions-preview-price">620 руб</div>
+                </div>
+                <button class="editions-preview-btn">Заказать</button>
+              </div>
+              <div class="editions-preview-block">
+                <img class="editions-preview-img" src="img/editions/editionsimgtwo.jpg" alt="">
+                <div class="editions-preview-text">
+                  <div class="editions-preview-name">
+                    <p class="editions-preview-name-item">Типографика</p>
+                    <p class="editions-preview-name-author">Рудер, Эмиль</p>
+                  </div>
+                  <div class="editions-preview-price">2450 руб</div>
+                </div>
+                <button class="editions-preview-btn">Заказать</button>
+              </div>
+              <div class="editions-preview-block">
+                <img class="editions-preview-img" src="img/editions/editionsimgthree.jpg" alt="">
+                <div class="editions-preview-text">
+                  <div class="editions-preview-name">
+                    <p class="editions-preview-name-item">Книга про буквы</p>
+                    <p class="editions-preview-name-author">Гордон, Юрий</p>
+                  </div>
+                  <div class="editions-preview-price">2200 руб</div>
+                </div>
+                <button class="editions-preview-btn">Заказать</button>
+              </div>
+            </div>
+            <div class="swiper-slide slide-block">
+              <div class="editions-preview-block">
+                <img class="editions-preview-img" src="img/editions/editionsimgfour.jpg" alt="">
+                <div class="editions-preview-text">
+                  <div class="editions-preview-name">
+                    <p class="editions-preview-name-item">Николай Ильин</p>
+                    <p class="editions-preview-name-author">Кричевский, Владимир</p>
+                  </div>
+                  <div class="editions-preview-price">1100 руб</div>
+                </div>
+                <button class="editions-preview-btn">Заказать</button>
+              </div>
+              <div class="editions-preview-block">
+                <img class="editions-preview-img" src="img/editions/editionsimgfive.jpg" alt="">
+                <div class="editions-preview-text">
+                  <div class="editions-preview-name">
+                    <p class="editions-preview-name-item">Модульные сетки в граф...</p>
+                    <p class="editions-preview-name-author">Мюллер-Брокманн, Йозеф</p>
+                  </div>
+                  <div class="editions-preview-price">1450 руб</div>
+                </div>
+                <button class="editions-preview-btn">Заказать</button>
+              </div>
+              <div class="editions-preview-block">
+                <img class="editions-preview-img" src="img/editions/editionsimgsix.jpg" alt="">
+                <div class="editions-preview-text">
+                  <div class="editions-preview-name">
+                    <p class="editions-preview-name-item">Эволюция графических ст...</p>
+                    <p class="editions-preview-name-author">Хеллер, Чваст</p>
+                  </div>
+                  <div class="editions-preview-price">3200 руб</div>
+                </div>
+                <button class="editions-preview-btn">Заказать</button>
+              </div>
+            </div>
+            <div class="swiper-slide slide-block">
+              <div class="editions-preview-block">
+                <img class="editions-preview-img" src="img/editions/editionsimgseven.jpg" alt="">
+                <div class="editions-preview-text">
+                  <div class="editions-preview-name">
+                    <p class="editions-preview-name-item">Искусство и визуальное в...</p>
+                    <p class="editions-preview-name-author">Арнхейм, Рудольф</p>
+                  </div>
+                  <div class="editions-preview-price">2200 руб</div>
+                </div>
+                <button class="editions-preview-btn">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="editions-container-right-1024 swiper-container">
+          <div class="navigation-editions">
+            <div class="swiper-button-prev-editions"></div>
+            <div class="swiper-pagination-editions"></div>
+            <div class="swiper-button-next-editions"></div>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-block">
+              <div class="editions-preview-block">
+                <img class="editions-preview-img" src="img/editions/editionsimgone.jpg" alt="">
+                <div class="editions-preview-text">
+                  <div class="editions-preview-name">
+                    <p class="editions-preview-name-item">Искусство цвета</p>
+                    <p class="editions-preview-name-author">Иттен, Иоханнес</p>
+                  </div>
+                  <div class="editions-preview-price">620 руб</div>
+                </div>
+                <button class="editions-preview-btn">Заказать</button>
+              </div>
+              <div class="editions-preview-block">
+                <img class="editions-preview-img" src="img/editions/editionsimgtwo.jpg" alt="">
+                <div class="editions-preview-text">
+                  <div class="editions-preview-name">
+                    <p class="editions-preview-name-item">Типографика</p>
+                    <p class="editions-preview-name-author">Рудер, Эмиль</p>
+                  </div>
+                  <div class="editions-preview-price">2450 руб</div>
+                </div>
+                <button class="editions-preview-btn">Заказать</button>
+              </div>
+            </div>
+            <div class="swiper-slide slide-block">
+              <div class="editions-preview-block">
+                <img class="editions-preview-img" src="img/editions/editionsimgthree.jpg" alt="">
+                <div class="editions-preview-text">
+                  <div class="editions-preview-name">
+                    <p class="editions-preview-name-item">Книга про буквы</p>
+                    <p class="editions-preview-name-author">Гордон, Юрий</p>
+                  </div>
+                  <div class="editions-preview-price">2200 руб</div>
+                </div>
+                <button class="editions-preview-btn">Заказать</button>
+              </div>
+              <div class="editions-preview-block">
+                <img class="editions-preview-img" src="img/editions/editionsimgfour.jpg" alt="">
+                <div class="editions-preview-text">
+                  <div class="editions-preview-name">
+                    <p class="editions-preview-name-item">Николай Ильин</p>
+                    <p class="editions-preview-name-author">Кричевский, Владимир</p>
+                  </div>
+                  <div class="editions-preview-price">1100 руб</div>
+                </div>
+                <button class="editions-preview-btn">Заказать</button>
+              </div>
+            </div>
+            <div class="swiper-slide slide-block">
+              <div class="editions-preview-block">
+                <img class="editions-preview-img" src="img/editions/editionsimgfive.jpg" alt="">
+                <div class="editions-preview-text">
+                  <div class="editions-preview-name">
+                    <p class="editions-preview-name-item">Модульные сетки в граф...</p>
+                    <p class="editions-preview-name-author">Мюллер-Брокманн, Йозеф</p>
+                  </div>
+                  <div class="editions-preview-price">1450 руб</div>
+                </div>
+                <button class="editions-preview-btn">Заказать</button>
+              </div>
+              <div class="editions-preview-block">
+                <img class="editions-preview-img" src="img/editions/editionsimgsix.jpg" alt="">
+                <div class="editions-preview-text">
+                  <div class="editions-preview-name">
+                    <p class="editions-preview-name-item">Эволюция графических ст...</p>
+                    <p class="editions-preview-name-author">Хеллер, Чваст</p>
+                  </div>
+                  <div class="editions-preview-price">3200 руб</div>
+                </div>
+                <button class="editions-preview-btn">Заказать</button>
+              </div>
+            </div>
+            <div class="swiper-slide slide-block">
+              <div class="editions-preview-block">
+                <img class="editions-preview-img" src="img/editions/editionsimgseven.jpg" alt="">
+                <div class="editions-preview-text">
+                  <div class="editions-preview-name">
+                    <p class="editions-preview-name-item">Искусство и визуальное в...</p>
+                    <p class="editions-preview-name-author">Арнхейм, Рудольф</p>
+                  </div>
+                  <div class="editions-preview-price">2200 руб</div>
+                </div>
+                <button class="editions-preview-btn">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="editions-container-right-320">
+          <div class="editions-preview-block">
+            <img class="editions-preview-img" src="img/editions/editionsimgone.jpg" alt="">
+            <div class="editions-preview-text">
+              <div class="editions-preview-name">
+                <p class="editions-preview-name-item">Искусство цвета</p>
+                <p class="editions-preview-name-author">Иттен, Иоханнес</p>
+              </div>
+              <div class="editions-preview-price">620 руб</div>
+            </div>
+            <button class="editions-preview-btn">Заказать</button>
+          </div>
+          <div class="editions-preview-block">
+            <img class="editions-preview-img" src="img/editions/editionsimgtwo.jpg" alt="">
+            <div class="editions-preview-text">
+              <div class="editions-preview-name">
+                <p class="editions-preview-name-item">Типографика</p>
+                <p class="editions-preview-name-author">Рудер, Эмиль</p>
+              </div>
+              <div class="editions-preview-price">2450 руб</div>
+            </div>
+            <button class="editions-preview-btn">Заказать</button>
+          </div>
+          <div class="editions-preview-block">
+            <img class="editions-preview-img" src="img/editions/editionsimgthree.jpg" alt="">
+            <div class="editions-preview-text">
+              <div class="editions-preview-name">
+                <p class="editions-preview-name-item">Книга про буквы</p>
+                <p class="editions-preview-name-author">Гордон, Юрий</p>
+              </div>
+              <div class="editions-preview-price">2200 руб</div>
+            </div>
+            <button class="editions-preview-btn">Заказать</button>
+          </div>
+          <div class="editions-preview-block">
+            <img class="editions-preview-img" src="img/editions/editionsimgfour.jpg" alt="">
+            <div class="editions-preview-text">
+              <div class="editions-preview-name">
+                <p class="editions-preview-name-item">Николай Ильин</p>
+                <p class="editions-preview-name-author">Кричевский, Владимир</p>
+              </div>
+              <div class="editions-preview-price">1100 руб</div>
+            </div>
+            <button class="editions-preview-btn">Заказать</button>
+          </div>
+          <div class="editions-preview-block">
+            <img class="editions-preview-img" src="img/editions/editionsimgfive.jpg" alt="">
+            <div class="editions-preview-text">
+              <div class="editions-preview-name">
+                <p class="editions-preview-name-item">Модульные сетки в граф...</p>
+                <p class="editions-preview-name-author">Мюллер-Брокманн, Йозеф</p>
+              </div>
+              <div class="editions-preview-price">1450 руб</div>
+            </div>
+            <button class="editions-preview-btn">Заказать</button>
+          </div>
+          <div class="editions-preview-block">
+            <img class="editions-preview-img" src="img/editions/editionsimgsix.jpg" alt="">
+            <div class="editions-preview-text">
+              <div class="editions-preview-name">
+                <p class="editions-preview-name-item">Эволюция графических ст...</p>
+                <p class="editions-preview-name-author">Хеллер, Чваст</p>
+              </div>
+              <div class="editions-preview-price">3200 руб</div>
+            </div>
+            <button class="editions-preview-btn">Заказать</button>
+          </div>
+          <div class="editions-preview-block">
+            <img class="editions-preview-img" src="img/editions/editionsimgseven.jpg" alt="">
+            <div class="editions-preview-text">
+              <div class="editions-preview-name">
+                <p class="editions-preview-name-item">Искусство и визуальное в...</p>
+                <p class="editions-preview-name-author">Арнхейм, Рудольф</p>
+              </div>
+              <div class="editions-preview-price">2200 руб</div>
+            </div>
+            <button class="editions-preview-btn">Заказать</button>
+          </div>
         </div>
       </div>
     </section>
+    <script>
+      var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+          clickable: 'true',
+        },
+        pagination: {
+          el: '.swiper-pagination-event',
+          type: 'bullets',
+          clickable: 'true',
+        },
+        pagination: {
+          el: '.swiper-pagination-editions',
+          type: 'fraction',
+          clickable: 'true',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next-editions',
+          prevEl: '.swiper-button-prev-editions',
+        },
+      });
+    </script>
+
+    <section>
+      <div class="container projects-container">
+        <h2 class="about-us-header">Проекты</h2>
+        <p class="projects-text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей
+          деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые
+          государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их
+          статус бесполезности. Прежде всего, постоянное информационно-пропагандистское <a href=""><img class="i-link"
+              src="img/projects/i_link.svg" alt=""></a> обеспечение нашей деятельности однозначно фиксирует
+          необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей
+          оппозиции могут быть рассмотрены <a href=""><img class="i-link" src="img/projects/i_link.svg" alt=""></a>
+          исключительно в разрезе маркетинговых и финансовых <a href=""><img class="i-link"
+              src="img/projects/i_link.svg" alt=""></a> предпосылок. Банальные, но неопровержимые выводы, а также
+          представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь,
+          должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a
+            class="projects-link" href=""> blanchard-art.ru/projects/about</a></p>
+        <h3 class="projects-partners">Патнеры проектов:</h3>
+        <div class="projects-partners-blocks">
+          <div class="swiper-button-prev-projects"></div>
+          <ul class="projects-partners-list swiper-container-projects">
+            <div class="swiper-wrapper">
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-one" href=""></a></li>
+                <li class="projects-partners-block"><a class="projects-partners-two" href=""></a></li>
+                <li class="projects-partners-block"><a class="projects-partners-three" href=""></a></li>
+              </div>
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-four" href=""></a></li>
+                <li class="projects-partners-block"><a class="projects-partners-five" href=""></a></li>
+                <li class="projects-partners-block"><a class="projects-partners-six" href=""></a></li>
+              </div>
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-seven" href=""></a></li>
+                <li class="projects-partners-block"><a class="projects-partners-eight" href=""></a></li>
+                <li class="projects-partners-block"><a class="projects-partners-nine" href=""></a></li>
+              </div>
+            </div>
+          </ul>
+          <div class="swiper-button-next-projects"></div>
+        </div>
+
+        <div class="projects-partners-blocks-1024">
+          <div class="swiper-button-prev-projects"></div>
+          <ul class="projects-partners-list swiper-container-projects">
+            <div class="swiper-wrapper">
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-one" href=""></a></li>
+                <li class="projects-partners-block"><a class="projects-partners-two" href=""></a></li>
+              </div>
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-three" href=""></a></li>
+                <li class="projects-partners-block"><a class="projects-partners-four" href=""></a></li>
+              </div>
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-five" href=""></a></li>
+                <li class="projects-partners-block"><a class="projects-partners-six" href=""></a></li>
+              </div>
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-seven" href=""></a></li>
+                <li class="projects-partners-block"><a class="projects-partners-eight" href=""></a></li>
+              </div>
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-nine" href=""></a></li>
+              </div>
+            </div>
+          </ul>
+          <div class="swiper-button-next-projects"></div>
+        </div>
+
+        <div class="projects-partners-blocks-320">
+          <div class="swiper-button-prev-projects"></div>
+          <ul class="projects-partners-list swiper-container-projects">
+            <div class="swiper-wrapper">
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-one" href=""></a></li>
+              </div>
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-two" href=""></a></li>
+              </div>
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-three" href=""></a></li>
+              </div>
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-four" href=""></a></li>
+              </div>
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-five" href=""></a></li>
+              </div>
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-six" href=""></a></li>
+              </div>
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-seven" href=""></a></li>
+              </div>
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-eight" href=""></a></li>
+              </div>
+              <div class="projects-partners-slide swiper-slide">
+                <li class="projects-partners-block"><a class="projects-partners-nine" href=""></a></li>
+              </div>
+            </div>
+          </ul>
+          <div class="swiper-button-next-projects"></div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var mySwiper = new Swiper('.swiper-container-projects', {
+        // Optional parameters
+        loop: true,
+
+        navigation: {
+          nextEl: '.swiper-button-next-projects',
+          prevEl: '.swiper-button-prev-projects',
+        },
+      });
+    </script>
+
+    <section>
+      <div class="container contacts-container">
+        <h2 class="contacts-header">Контакты</h2>
+        <div class="contacts-double">
+          <div class="contacts-showroom-320">
+            <h3 class="contacts-showroom-name">Шоурум №2</h3>
+            <p class="contacts-showroom-adress">Покровский бульвар, дом 24, строение 3</p>
+          </div>
+          <div class="contacts-left">
+            <div class="contacts-left-content">
+              <div class="contacts-showroom">
+                <h3 class="contacts-showroom-name">Шоурум №2</h3>
+                <p class="contacts-showroom-adress">Покровский бульвар, дом 24, строение 3</p>
+              </div>
+                <form class="contacts-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                  <h3 class="contacts-form-header">Заказать обратный звонок</h3>
+                  <input class="contacts-form-input" name="name" type="text" data-validate-field="name"
+                    placeholder="Имя*">
+                  <input class="contacts-form-input" name="tel" type="tel" data-validate-field="tel"
+                    data-validate-rules="phone" placeholder="Телефон*">
+                  <button class="contacts-form-btn" type="submit">Заказать</button>
+                </form>
+                <script src="js/just-validate.min.js"></script>
+                <script src="js/inputmask.min.js"></script>
+                <script>
+                  var selector = document.querySelector("input[type='tel']");
+                  var im = new Inputmask("+375 (99) 999-99-99");
+
+                  im.mask(selector);
+
+                  new JustValidate('.contacts-form', {
+                    rules: {
+                      name: {
+                        required: true,
+                        minLength: 2,
+                        maxLength: 20
+                      },
+                      tel: {
+                        required: true,
+                        function: (name, value) => {
+                          const phone = selector.inputmask.unmaskedvalue()
+                          console.log(phone)
+                          return Number(phone) && phone.length === 9
+                        }
+                      },
+                    },
+                    messages: {
+                      name: {
+                        required: 'Введите имя!'
+                      },
+                      tel: {
+                        required: 'Введите телефон!'
+                      }
+                    },
+                  });
+                </script>
+                <div class="contacts-social">
+                  <h3 class="contacts-social-header">Связаться в один клик</h3>
+                  <a class="contacts-social-link whatsup-link" href=""></a>
+                  <a class="contacts-social-link telegram-link" href=""></a>
+                </div>
+            </div>
+          </div>
+          <div class="contacts-right">
+            <div class="maps" id="map"></div>
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+              type="text/javascript"></script>
+            <script type="text/javascript">
+              // Функция ymaps.ready() будет вызвана, когда
+              // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+              ymaps.ready(init);
+              function init() {
+                // Создание карты.
+                var myMap = new ymaps.Map("map", {
+                  // Координаты центра карты.
+                  // Порядок по умолчанию: «широта, долгота».
+                  // Чтобы не определять координаты центра карты вручную,
+                  // воспользуйтесь инструментом Определение координат.
+                  center: [55.753326, 37.646830],
+                  // Уровень масштабирования. Допустимые значения:
+                  // от 0 (весь мир) до 19.
+                  zoom: 15,
+                  type: 'yandex#map',
+                  controls: [],
+                  suppressMapOpenBlock: true
+                });
+
+
+                var myPlacemark = new ymaps.Placemark([55.753326, 37.646830], {}, {
+                  iconLayout: 'default#image',
+                  iconImageHref: 'img/contacts/mapsmark.svg',
+                  iconImageSize: [20, 20],
+                });
+
+                myMap.geoObjects.add(myPlacemark);
+                myMap.controls.remove('controlName');
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-logo"></div>
+        <div class="footer-social">
+          <a class="footer-social-link vk-link" href=""></a>
+          <a class="footer-social-link instagram-link" href=""></a>
+          <a class="footer-social-link facebook-link" href=""></a>
+        </div>
+      </div>
+    </footer>
   </main>
 </body>
 
