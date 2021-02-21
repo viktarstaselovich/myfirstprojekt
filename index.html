@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="css/normalize.css">
   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
-  <link rel="stylesheet" href="css/choices.css">
+
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css"> -->
-  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+  <link rel="stylesheet" href="css/choices.css">
+  <link rel="stylesheet" href="css/simplebar.css">
   <link rel="stylesheet" href="css/style.css">
 
 
@@ -28,7 +28,7 @@
   </script>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/choices.js"></script>
+
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script> -->
   <!-- <script src="js/catalog-tabs.js"></script>
   <script src="js/events.js"></script>
@@ -38,9 +38,10 @@
 <body>
   <section class="section-hero">
     <header class="header">
-      <div class="container header-container">
-        <button class="burger" id="burger"></button>
-        <a class="logo" href=""><img class="logo-img" src="img/header/headerlogo.svg" alt="Логотип"></a>
+      <div class="header-top">
+        <div class="container header-container">
+          <button class="burger" id="burger"></button>
+          <a class="logo" href=""><img class="logo-img" src="img/header/headerlogo.svg" alt="Логотип"></a>
           <nav class="nav" id="menu">
             <ul class="nav-list" id="ancher">
               <li class="nav-item"><a class="nav-link" href="#about-us">О нас</a></li>
@@ -53,85 +54,119 @@
             </ul>
             <a class="link-inside" href="">Войти</a>
           </nav>
-        <form class="search-form" action="https://jsonplaceholder.typicode.com/posts" id="search-form">
-          <div class="search-form-block" id="search-block">
-            <input class="search-form-input" type="text">
-            <button class="search-form-btn">Найти</button>
-          </div>
-        </form>
+          <form class="search-form" action="https://jsonplaceholder.typicode.com/posts" id="search-form">
+            <div class="search-form-block" id="search-block">
+              <input class="search-form-input" type="text">
+              <button class="search-form-btn">Найти</button>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="header-art-block">
-        <ul class="header-art-list">
-          <li class="header-art-item"><button class="header-art-btn">Реализм</button>
-            <div class="header-art-menu-block">
-              <ul class="header-art-menu-list">
-                <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link" href="">Тинторетто</a></li>
-                <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link" href="">Фридрих</a></li>
-                <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link" href="">Леонардо</a></li>
-                <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link" href="">Верроккьо</a></li>
-                <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link" href="">Реализм5</a></li>
-                <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link" href="">Реализм6</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="header-art-item"><button class="header-art-btn">Импрессионизм</button>
-            <div class="header-art-menu-block">
-              <ul class="header-art-menu-list">
-                <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link" href="">Тинторетто</a></li>
-                <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link" href="">Фридрих</a></li>
-                <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link" href="">Леонардо</a></li>
-                <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link" href="">Верроккьо</a></li>
-                <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link" href="">Импрессионизм5</a></li>
-                <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link" href="">Импрессионизм6</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="header-art-item"><button class="header-art-btn">Постимпрессионизм</button>
-            <div class="header-art-menu-block">
-              <ul class="header-art-menu-list">
-                <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link" href="">Тинторетто</a></li>
-                <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link" href="">Фридрих</a></li>
-                <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link" href="">Леонардо</a></li>
-                <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link" href="">Верроккьо</a></li>
-                <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link" href="">Постимпрессионизм5</a></li>
-                <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link" href="">Постимпрессионизм6</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="header-art-item"><button class="header-art-btn">Авангард</button>
-            <div class="header-art-menu-block">
-              <ul class="header-art-menu-list">
-                <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link" href="">Тинторетто</a></li>
-                <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link" href="">Фридрих</a></li>
-                <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link" href="">Леонардо</a></li>
-                <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link" href="">Верроккьо</a></li>
-                <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link" href="">Авангард5</a></li>
-                <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link" href="">Авангард6</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="header-art-item"><button class="header-art-btn">Футуризм</button>
-            <div class="header-art-menu-block">
-              <ul class="header-art-menu-list">
-                <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link" href="">Тинторетто</a></li>
-                <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link" href="">Фридрих</a></li>
-                <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link" href="">Леонардо</a></li>
-                <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link" href="">Верроккьо</a></li>
-                <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link" href="">Футуризм5</a></li>
-                <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link" href="">Футуризм6</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <form class="header-art-form" action="">
-          <input class="header-art-search-input" type="text" placeholder="Поиск по сайту">
-          <button class="header-art-search-btn" type="submit"></button>
-        </form>
+      <div class="header-bottom">
+        <div class="container header-art-block">
+          <ul class="header-art-list">
+            <li class="header-art-item"><button class="header-art-btn">Реализм</button>
+              <div class="header-art-menu-block">
+                <ul class="header-art-menu-list">
+                  <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link"
+                      href="">Тинторетто</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link"
+                      href="">Фридрих</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link"
+                      href="">Леонардо</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link"
+                      href="">Верроккьо</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link"
+                      href="">Реализм5</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link"
+                      href="">Реализм6</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-art-item"><button class="header-art-btn">Импрессионизм</button>
+              <div class="header-art-menu-block">
+                <ul class="header-art-menu-list">
+                  <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link"
+                      href="">Тинторетто</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link"
+                      href="">Фридрих</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link"
+                      href="">Леонардо</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link"
+                      href="">Верроккьо</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link"
+                      href="">Импрессионизм5</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link"
+                      href="">Импрессионизм6</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-art-item"><button class="header-art-btn">Постимпрессионизм</button>
+              <div class="header-art-menu-block">
+                <ul class="header-art-menu-list">
+                  <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link"
+                      href="">Тинторетто</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link"
+                      href="">Фридрих</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link"
+                      href="">Леонардо</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link"
+                      href="">Верроккьо</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link"
+                      href="">Постимпрессионизм5</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link"
+                      href="">Постимпрессионизм6</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-art-item"><button class="header-art-btn">Авангард</button>
+              <div class="header-art-menu-block">
+                <ul class="header-art-menu-list">
+                  <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link"
+                      href="">Тинторетто</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link"
+                      href="">Фридрих</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link"
+                      href="">Леонардо</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link"
+                      href="">Верроккьо</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link"
+                      href="">Авангард5</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link"
+                      href="">Авангард6</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-art-item"><button class="header-art-btn">Футуризм</button>
+              <div class="header-art-menu-block">
+                <ul class="header-art-menu-list">
+                  <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link"
+                      href="">Тинторетто</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link"
+                      href="">Фридрих</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link"
+                      href="">Леонардо</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-one"><a class="header-art-menu-link"
+                      href="">Верроккьо</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-two"><a class="header-art-menu-link"
+                      href="">Футуризм5</a></li>
+                  <li class="header-art-menu-item header-art-menu-type-three"><a class="header-art-menu-link"
+                      href="">Футуризм6</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <form class="header-art-form" action="https://jsonplaceholder.typicode.com/posts">
+            <input class="header-art-search-input" type="text" placeholder="Поиск по сайту">
+            <button class="header-art-search-btn" type="submit"></button>
+          </form>
+        </div>
       </div>
     </header>
     <div class="container section-hero-block">
       <h2 class="hero-heading">Прикоснитесь к прекрасному</h2>
-      <p class="hero-text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+      <p class="hero-text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
+        предпосылки для новых предложений.</p>
       <button class="hero-btn">Подписаться на рассылку</button>
     </div>
   </section>
@@ -140,21 +175,30 @@
     <section class="section-about-us">
       <div class="container">
         <h2 class="section-heading">О нас</h2>
-        <p class="about-us-text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
+        <p class="about-us-text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно
+          определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних
+          резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за
+          собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество
+          позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных
+          мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных
+          стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а
+          значит, должны быть разоблачены.</p>
       </div>
     </section>
 
     <section class="section-gallery">
-      <div class="container">
+      <div class="container section-gallery-double">
         <div class="gallery-container-left">
-          <h2 class="section-heading">Галерея</h2>
+          <h2 class="section-heading section-heading-white">Галерея</h2>
           <span class="gallery-filter-heading">Фильтровать по:</span>
-          <ul class="gallery-filter-list">
-            <li class="gallery-filter-item">Автор</li>
-            <li class="gallery-filter-item">Направление</li>
-            <li class="gallery-filter-item">Техника</li>
-          </ul>
-          <p class="gallery-description">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="gallery-description-link" href=""> авторизуйтесь,</a> либо воспользуйтесь лицензией. </p>
+          <select class="gallery-filter-list" name="Author" id="selectCustom">
+            <option class="gallery-filter-item" value="0">Автор</option>
+            <option class="gallery-filter-item" value="1">Направление</option>
+            <option class="gallery-filter-item" value="2">Техника</option>
+          </select>
+          <p class="gallery-description">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества
+            скачиваний <a class="gallery-description-link" href=""> авторизуйтесь,</a> либо воспользуйтесь лицензией.
+          </p>
         </div>
         <div class="gallery-container-right">
           <ul class="gallery-right-list">
@@ -193,13 +237,21 @@
             <li class="catalog-language-item"><a class="catalog-language-link" href=""></a>Бельгия</li>
           </ul>
         </div>
-        <p class="catalog-description">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.</p>
+        <p class="catalog-description">Акционеры крупнейших компаний, которые представляют собой яркий пример
+          континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы
+          этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
+          нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на
+          независимые элементы.</p>
         <div class="catalog-content">
           <div class="catalog-content-left">
-            <img class="catalog-autor-img" src="img/catalog/Доменико Гирландайо.jpg" alt="">
+            <img class="catalog-autor-img" src="img/catalog/Доменико_Гирландайо.jpg" alt="">
             <h3 class="catalog-autor-name">Доменико Гирландайо</h3>
             <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
-            <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+              художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+              мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+              циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+              их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
           </div>
           <div class="catalog-content-right">
             <ul class="catalog-dates-list">
@@ -264,35 +316,40 @@
             <img class="events-blocks-img" src="img/event/eventimgone.jpg" alt="">
             <span class="events-blocks-museum">Музей им. Щусева с 20 марта по 30 апреля</span>
             <h3 class="events-blocks-name">Книжная гравюра в живом восприятии</h3>
-            <p class="events-blocks-description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+            <p class="events-blocks-description">Один из ведущих флорентийских художников Кватроченто, основатель
+              художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
             <a class="events-blocks-link" href="">Подробнее</a>
           </li>
           <li class="events-blocks-item">
             <img class="events-blocks-img" src="img/event/eventimgtwo.jpg" alt="">
             <span class="events-blocks-museum">ММОМА 24 марта 19:00</span>
             <h3 class="events-blocks-name">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-            <p class="events-blocks-description">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+            <p class="events-blocks-description">Высокий уровень вовлечения представителей целевой аудитории является
+              четким доказательством простого факта.</p>
             <a class="events-blocks-link" href="">Подробнее</a>
           </li>
           <li class="events-blocks-item">
             <img class="events-blocks-img" src="img/event/eventimgthree.jpg" alt="">
             <span class="events-blocks-museum">Еврейский музей с 31 марта по 21 апреля</span>
             <h3 class="events-blocks-name">Выставка «Формация 2020»</h3>
-            <p class="events-blocks-description">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+            <p class="events-blocks-description">Идейные соображения высшего порядка, а также современная методология
+              разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
             <a class="events-blocks-link" href="">Подробнее</a>
           </li>
           <li class="events-blocks-item">
             <img class="events-blocks-img" src="img/event/eventimgfour.jpg" alt="">
             <span class="events-blocks-museum">Третьяковка на Крымском валу с 30 марта по 30 апреля</span>
             <h3 class="events-blocks-name">XXIV Международная биеннале молодого искусства</h3>
-            <p class="events-blocks-description">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
+            <p class="events-blocks-description">Внезапно, реплицированные с зарубежных источников, современные
+              исследования.</p>
             <a class="events-blocks-link" href="">Подробнее</a>
           </li>
           <li class="events-blocks-item">
             <img class="events-blocks-img" src="img/event/eventimgfive.jpg" alt="">
             <span class="events-blocks-museum">ММАМ с 8 апреля по 20 мая</span>
             <h3 class="events-blocks-name">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-            <p class="events-blocks-description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+            <p class="events-blocks-description">Один из ведущих флорентийских художников Кватроченто, основатель
+              художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
             <a class="events-blocks-link" href="">Подробнее</a>
           </li>
         </ul>
@@ -309,10 +366,10 @@
             <ul class="editions-category-list">
               <li class="editions-category-item">
                 <label class="label-style" for="check1" data-label="1">
-                <input class="editions-input" type="checkbox" id="check1" data-input="1">
-                Бестселлеры
-                <span></span>
-              </label></li>
+                  <input class="editions-input" type="checkbox" id="check1" data-input="1">
+                  Бестселлеры
+                  <span></span>
+                </label></li>
               <li class="editions-category-item">
                 <label class="label-style" for="check2" data-label="2">
                   <input class="editions-input" type="checkbox" id="check2" data-input="2">
@@ -460,7 +517,20 @@
     <section class="section-projects">
       <div class="container">
         <h2 class="section-heading">Проекты</h2>
-        <p class="projects-text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское <a class="project-tooltip" href=""><span class="project-tooltip-text">Пример современных тенденций - современная методология разработки</span></a> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <a class="project-tooltip" href=""><span class="project-tooltip-text">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции</span></a>  исключительно в разрезе маркетинговых и финансовых <a class="project-tooltip" href=""><span class="project-tooltip-text">В стремлении повысить качество</span></a> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="project-text-link" href=""> blanchard-art.ru/projects/about</a></p>
+        <p class="projects-text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей
+          деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые
+          государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их
+          статус бесполезности. Прежде всего, постоянное информационно-пропагандистское <a class="project-tooltip"
+            href=""><span class="project-tooltip-text">Пример современных тенденций - современная методология
+              разработки</span></a> обеспечение нашей деятельности однозначно фиксирует необходимость экономической
+          целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть
+          рассмотрены <a class="project-tooltip" href=""><span class="project-tooltip-text">Приятно, граждане,
+              наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции</span></a> исключительно в разрезе
+          маркетинговых и финансовых <a class="project-tooltip" href=""><span class="project-tooltip-text">В стремлении
+              повысить качество</span></a> предпосылок. Банальные, но неопровержимые выводы, а также представители
+          современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны
+          с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="project-text-link"
+            href=""> blanchard-art.ru/projects/about</a></p>
         <span class="progects-partners-heading">Партнеры проекта:</span>
         <ul class="projects-partners-list">
           <li class="projects-partners-item"><a class="project-partners-link" href=""></a></li>
@@ -483,7 +553,7 @@
           <h3 class="showroom-name">Шоурум №2</h3>
           <span class="showroom-adress">Леонтьевский переулок, дом 5, строение 1</span>
           <strong class="showroom-callback">Заказать обратный звонок</strong>
-          <form class="contacts-form" action="">
+          <form class="contacts-form" action="https://jsonplaceholder.typicode.com/posts">
             <input class="contacts-form-input" type="text" placeholder="Имя*">
             <input class="contacts-form-input" type="text" placeholder="Телефон*">
             <button class="contacts-form-btn">Заказать</button>
@@ -511,6 +581,7 @@
   </footer>
 
   <script src="js/burger.js"></script>
+
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script>
     let blocks = document.querySelectorAll('.header-art-menu-list');
@@ -519,5 +590,16 @@
     })
   </script>
 
+  <script src="js/choices.js"></script>
+  <script>
+    const element = document.querySelector('#selectCustom');
+    const choices = new Choices(element, {
+      searchEnabled: false,
+      itemSelectText: '',
+      shouldSort: false,
+    });
+  </script>
+
 </body>
+
 </html>
