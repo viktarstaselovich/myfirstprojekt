@@ -404,7 +404,7 @@ h1, h2, h3, h4, p {
 
 .simplebar-wrapper {
   width: 240px;
-  height: 220px;
+  max-height: 220px;
 }
 
 .simplebar-track.simplebar-vertical {
