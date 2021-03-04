@@ -36,7 +36,7 @@
 </head>
 
 <body>
-  <section class="section-hero">
+  <div class="top-block">
     <header class="header">
       <div class="header-top">
         <div class="container header-container">
@@ -65,8 +65,8 @@
       <div class="header-bottom">
         <div class="container header-art-block">
           <ul class="header-art-list">
-            <li class="header-art-item"><button class="header-art-btn">Реализм</button>
-              <div class="header-art-menu-block">
+            <li class="header-art-item"><button data-path="1" class="header-art-btn">Реализм</button>
+              <div class="header-art-menu-block" data-targer="1">
                 <ul class="header-art-menu-list">
                   <li class="header-art-menu-item header-art-menu-real-one"><a class="header-art-menu-link"
                       href="">Тинторетто</a></li>
@@ -83,8 +83,8 @@
                 </ul>
               </div>
             </li>
-            <li class="header-art-item"><button class="header-art-btn">Импрессионизм</button>
-              <div class="header-art-menu-block">
+            <li class="header-art-item"><button data-path="2" class="header-art-btn">Импрессионизм</button>
+              <div class="header-art-menu-block" data-targer="2">
                 <ul class="header-art-menu-list">
                   <li class="header-art-menu-item header-art-menu-impress-one"><a class="header-art-menu-link"
                       href="">Моне</a></li>
@@ -101,8 +101,8 @@
                 </ul>
               </div>
             </li>
-            <li class="header-art-item"><button class="header-art-btn">Постимпрессионизм</button>
-              <div class="header-art-menu-block">
+            <li class="header-art-item"><button data-path="3" class="header-art-btn">Постимпрессионизм</button>
+              <div class="header-art-menu-block"  data-targer="3">
                 <ul class="header-art-menu-list">
                   <li class="header-art-menu-item header-art-menu-postimpress-one"><a class="header-art-menu-link"
                       href="">Ван Гог</a></li>
@@ -119,8 +119,8 @@
                 </ul>
               </div>
             </li>
-            <li class="header-art-item"><button class="header-art-btn">Авангард</button>
-              <div class="header-art-menu-block">
+            <li class="header-art-item"><button data-path="4" class="header-art-btn">Авангард</button>
+              <div class="header-art-menu-block"  data-targer="4">
                 <ul class="header-art-menu-list">
                   <li class="header-art-menu-item header-art-menu-avang-one"><a class="header-art-menu-link"
                       href="">Кандинский</a></li>
@@ -137,8 +137,8 @@
                 </ul>
               </div>
             </li>
-            <li class="header-art-item"><button class="header-art-btn">Футуризм</button>
-              <div class="header-art-menu-block">
+            <li class="header-art-item"><button data-path="5" class="header-art-btn">Футуризм</button>
+              <div class="header-art-menu-block"  data-targer="5">
                 <ul class="header-art-menu-list">
                   <li class="header-art-menu-item header-art-menu-future-one"><a class="header-art-menu-link"
                       href="">Карра</a></li>
@@ -163,13 +163,15 @@
         </div>
       </div>
     </header>
-    <div class="container section-hero-block">
-      <h2 class="hero-heading">Прикоснитесь к прекрасному</h2>
-      <p class="hero-text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
-        предпосылки для новых предложений.</p>
-      <button class="hero-btn">Подписаться на рассылку</button>
-    </div>
-  </section>
+    <section class="section-hero">
+      <div class="container section-hero-block">
+        <h1 class="hero-heading">Прикоснитесь к прекрасному</h1>
+        <p class="hero-text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
+          предпосылки для новых предложений.</p>
+        <button class="hero-btn">Подписаться на рассылку</button>
+      </div>
+    </section>
+  </div>
 
   <main>
     <section class="section-about-us">

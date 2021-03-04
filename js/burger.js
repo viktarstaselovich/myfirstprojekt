@@ -6,4 +6,13 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#search-block').classList.toggle('is-active')
   })
 
+
+  document.querySelectorAll('.header-art-btn').forEach(function(artList) {
+    artList.addEventListener('click', function(event) {
+      const path = event.currentTarget.dataset.path
+      // console.log(path)
+
+      document.querySelector(`[data-target="${path}"]`).classList.add('header-art-is-open')
+    })
+  })
 })
