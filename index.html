@@ -6,33 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <!--
+
 
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css"> -->
   <link rel="stylesheet" href="css/swiper-bundle.css">
   <link rel="stylesheet" href="css/choices.css">
   <link rel="stylesheet" href="css/simplebar.css">
   <link rel="stylesheet" href="css/style.css">
-
-
-  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-    $(function () {
-      $("#accordion, #accordion2,  #accordion3,  #accordion4,  #accordion5").accordion({
-        collapsible: true,
-        heightStyle: "content"
-      });
-    });
-  </script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script> -->
-  <!-- <script src="js/catalog-tabs.js"></script>
-  <script src="js/events.js"></script>
-  <script src="js/editions.js"></script> -->
 </head>
 
 <body>
@@ -66,7 +46,7 @@
         <div class="container header-art-block">
           <ul class="header-art-list">
             <li class="header-art-item"><button data-path="1" class="header-art-btn">Реализм</button>
-              <div class="header-art-menu-block" data-targer="1">
+              <div class="header-art-menu-block" data-target="1">
                 <ul class="header-art-menu-list">
                   <li class="header-art-menu-item header-art-menu-real-one"><a class="header-art-menu-link"
                       href="">Тинторетто</a></li>
@@ -84,7 +64,7 @@
               </div>
             </li>
             <li class="header-art-item"><button data-path="2" class="header-art-btn">Импрессионизм</button>
-              <div class="header-art-menu-block" data-targer="2">
+              <div class="header-art-menu-block" data-target="2">
                 <ul class="header-art-menu-list">
                   <li class="header-art-menu-item header-art-menu-impress-one"><a class="header-art-menu-link"
                       href="">Моне</a></li>
@@ -102,7 +82,7 @@
               </div>
             </li>
             <li class="header-art-item"><button data-path="3" class="header-art-btn">Постимпрессионизм</button>
-              <div class="header-art-menu-block"  data-targer="3">
+              <div class="header-art-menu-block"  data-target="3">
                 <ul class="header-art-menu-list">
                   <li class="header-art-menu-item header-art-menu-postimpress-one"><a class="header-art-menu-link"
                       href="">Ван Гог</a></li>
@@ -120,7 +100,7 @@
               </div>
             </li>
             <li class="header-art-item"><button data-path="4" class="header-art-btn">Авангард</button>
-              <div class="header-art-menu-block"  data-targer="4">
+              <div class="header-art-menu-block"  data-target="4">
                 <ul class="header-art-menu-list">
                   <li class="header-art-menu-item header-art-menu-avang-one"><a class="header-art-menu-link"
                       href="">Кандинский</a></li>
@@ -138,7 +118,7 @@
               </div>
             </li>
             <li class="header-art-item"><button data-path="5" class="header-art-btn">Футуризм</button>
-              <div class="header-art-menu-block"  data-targer="5">
+              <div class="header-art-menu-block"  data-target="5">
                 <ul class="header-art-menu-list">
                   <li class="header-art-menu-item header-art-menu-future-one"><a class="header-art-menu-link"
                       href="">Карра</a></li>
@@ -165,7 +145,8 @@
     </header>
     <section class="section-hero">
       <div class="container section-hero-block">
-        <h1 class="hero-heading">Прикоснитесь к прекрасному</h1>
+        <h1></h1>
+        <strong class="hero-heading">Прикоснитесь к прекрасному</strong>
         <p class="hero-text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
           предпосылки для новых предложений.</p>
         <button class="hero-btn">Подписаться на рассылку</button>
@@ -241,83 +222,327 @@
     <section class="section-catalog">
       <div class="container">
         <div class="section-catalog-header">
-          <h2 class="section-heading">Каталог</h2>
+          <h2 class="section-heading section-catalog-heading">Каталог</h2>
           <ul class="catalog-language-list">
-            <li class="catalog-language-item"><a class="catalog-language-link" href=""></a>Франция</li>
-            <li class="catalog-language-item"><a class="catalog-language-link" href=""></a>Германия</li>
-            <li class="catalog-language-item"><a class="catalog-language-link" href=""></a>Италия</li>
-            <li class="catalog-language-item"><a class="catalog-language-link" href=""></a>Россия</li>
-            <li class="catalog-language-item"><a class="catalog-language-link" href=""></a>Бельгия</li>
+            <li class="catalog-language-item catalog-language-france" data-lang="fra"></li>
+            <li class="catalog-language-item catalog-language-germany" data-lang="ger"></li>
+            <li class="catalog-language-item catalog-language-italy" data-lang="ita"></li>
+            <li class="catalog-language-item catalog-language-russia catalog-language-active" data-lang="rus"></li>
+            <li class="catalog-language-item catalog-language-belgium" data-lang="bel"></li>
           </ul>
         </div>
-        <p class="catalog-description">Акционеры крупнейших компаний, которые представляют собой яркий пример
-          континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы
-          этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
-          нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на
-          независимые элементы.</p>
-        <div class="catalog-content">
-          <div class="catalog-content-left">
-            <img class="catalog-autor-img" src="img/catalog/Доменико_Гирландайо.jpg" alt="">
-            <h3 class="catalog-autor-name">Доменико Гирландайо</h3>
-            <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
-            <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
-              художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
-              мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
-              циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
-              их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
-          </div>
-          <div class="catalog-content-right">
-            <ul class="catalog-dates-list">
-              <li class="catalog-dates-item">
-                <span class="catalog-dates">C 1400 по 1499 гг.</span>
-                <ul class="catalog-autor-list">
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Бенедетто ди Биндо</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Бергоньоне, Амброджо</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Биссоло, Франческо</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Больтраффио, Джованни</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Бонсиньори, Франческо</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Боттичини, Рафаэлло</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Брамантино</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Бреа, Людовико</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Бьяджо д’Антонио Туччи</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Веккьетта</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Андреа Верроккьо</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Доменико Гирландайо</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Беноццо Гоццоли</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Граначчи, Франческо</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Грегорио ди Чекко</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Джованни да Удине</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Джованни ди Паоло</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Джорджоне</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Парентино, Бернардо</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Пезеллино</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Пьетро Перуджино</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Перуцци, Бальдассаре</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Пизанелло</a></li>
-                  <li class="catalog-autor-item"><a class="catalog-autor-link" href="">Пинтуриккьо</a></li>
-                </ul>
-              </li>
-              <li class="catalog-dates-item">
-                <span class="catalog-dates">C 1500 по 1599 гг.</span>
-              </li>
-              <li class="catalog-dates-item">
-                <span class="catalog-dates">C 1600 по 1699 гг.</span>
-              </li>
-              <li class="catalog-dates-item">
-                <span class="catalog-dates">C 1700 по 1799 гг.</span>
-              </li>
-              <li class="catalog-dates-item">
-                <span class="catalog-dates">C 1800 по 1899 гг.</span>
-              </li>
-              <li class="catalog-dates-item">
-                <span class="catalog-dates">C 1900 по 1999 гг.</span>
-              </li>
-              <li class="catalog-dates-item">
-                <span class="catalog-dates">C 2000 г.</span>
-              </li>
-            </ul>
+        <div class="catalog-content" data-catalog="fra">FRANCE</div>
+        <div class="catalog-content" data-catalog="ger">GERMANY</div>
+        <div class="catalog-content" data-catalog="ita">ITALY</div>
+        <div class="catalog-content catalog-content-active" data-catalog="rus">
+          <p class="catalog-description">Акционеры крупнейших компаний, которые представляют собой яркий пример
+            континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы
+            этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
+            нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на
+            независимые элементы.</p>
+          <div class="catalog-content-bottom">
+            <div class="catalog-content-left" data-authorimg="1">
+              <img class="catalog-autor-img" src="img/catalog/Бенедетто ди Биндо.jpg" alt="">
+              <h3 class="catalog-autor-name">Бенедетто ди Биндо</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="2">
+              <img class="catalog-autor-img" src="img/catalog/Бергоньоне, Амброджо.jpg" alt="">
+              <h3 class="catalog-autor-name">Бергоньоне, Амброджо</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="3">
+              <img class="catalog-autor-img" src="img/catalog/Биссоло, Франческо.jpeg" alt="">
+              <h3 class="catalog-autor-name">Биссоло, Франческо</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="4">
+              <img class="catalog-autor-img" src="img/catalog/Больтраффио, Джованни.jpg" alt="">
+              <h3 class="catalog-autor-name">Больтраффио, Джованни</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="5">
+              <img class="catalog-autor-img" src="img/catalog/Бонсиньори, Франческо.jpeg" alt="">
+              <h3 class="catalog-autor-name">Бонсиньори, Франческо</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="6">
+              <img class="catalog-autor-img" src="img/catalog/Боттичини, Рафаэлло.jpg" alt="">
+              <h3 class="catalog-autor-name">Боттичини, Рафаэлло</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="7">
+              <img class="catalog-autor-img" src="img/catalog/Брамантино.jpg" alt="">
+              <h3 class="catalog-autor-name">Брамантино</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="8">
+              <img class="catalog-autor-img" src="img/catalog/Бреа, Людовико.jpg" alt="">
+              <h3 class="catalog-autor-name">Бреа, Людовико</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="9">
+              <img class="catalog-autor-img" src="img/catalog/Бьяджо д’Антонио Туччи.jpg" alt="">
+              <h3 class="catalog-autor-name">Бьяджо д’Антонио Туччи</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="10">
+              <img class="catalog-autor-img" src="img/catalog/Веккьетта.jpg" alt="">
+              <h3 class="catalog-autor-name">Веккьетта</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="11">
+              <img class="catalog-autor-img" src="img/catalog/Андреа Верроккьо.jpg" alt="">
+              <h3 class="catalog-autor-name">Андреа Верроккьо</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left catalog-left-active" data-authorimg="12">
+              <img class="catalog-autor-img" src="img/catalog/Доменико_Гирландайо.jpg" alt="">
+              <h3 class="catalog-autor-name">Доменико Гирландайо</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="13">
+              <img class="catalog-autor-img" src="img/catalog/Беноццо Гоццоли.jpg" alt="">
+              <h3 class="catalog-autor-name">Беноццо Гоццоли</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="14">
+              <img class="catalog-autor-img" src="img/catalog/Граначчи, Франческо.jpg" alt="">
+              <h3 class="catalog-autor-name">Граначчи, Франческо</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="15">
+              <img class="catalog-autor-img" src="img/catalog/Грегорио ди Чекко.jpg" alt="">
+              <h3 class="catalog-autor-name">Грегорио ди Чекко</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="16">
+              <img class="catalog-autor-img" src="img/catalog/Джованни да Удине.jpg" alt="">
+              <h3 class="catalog-autor-name">Джованни да Удине</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="17">
+              <img class="catalog-autor-img" src="img/catalog/Джованни ди Паоло.jpg" alt="">
+              <h3 class="catalog-autor-name">Джованни ди Паоло</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="18">
+              <img class="catalog-autor-img" src="img/catalog/Джорджоне.jpg" alt="">
+              <h3 class="catalog-autor-name">Джорджоне</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="19">
+              <img class="catalog-autor-img" src="img/catalog/Парентино, Бернардо.jpg" alt="">
+              <h3 class="catalog-autor-name">Парентино, Бернардо</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="20">
+              <img class="catalog-autor-img" src="img/catalog/Пезеллино.jpg" alt="">
+              <h3 class="catalog-autor-name">Пезеллино</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="21">
+              <img class="catalog-autor-img" src="img/catalog/Пьетро Перуджино.jpg" alt="">
+              <h3 class="catalog-autor-name">Пьетро Перуджино</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="22">
+              <img class="catalog-autor-img" src="img/catalog/Перуцци, Бальдассаре.jpg" alt="">
+              <h3 class="catalog-autor-name">Перуцци, Бальдассаре</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="23">
+              <img class="catalog-autor-img" src="img/catalog/Пизанелло.jpg" alt="">
+              <h3 class="catalog-autor-name">Пизанелло</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-left" data-authorimg="24">
+              <img class="catalog-autor-img" src="img/catalog/Пинтуриккьо.jpg" alt="">
+              <h3 class="catalog-autor-name">Пинтуриккьо</h3>
+              <span class="catalog-autor-date">2 июня 1448 — 11 января 1494.</span>
+              <p class="catalog-autor-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+                мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых
+                циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в
+                их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+            </div>
+            <div class="catalog-content-right">
+              <ul class="catalog-dates-list" id="accordion">
+                <li class="catalog-dates-item">
+                  <h3 class="catalog-dates">C 1400 по 1499 гг.</h3>
+                  <div>
+                    <ul class="catalog-autor-list">
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="1">Бенедетто ди Биндо</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="2">Бергоньоне, Амброджо</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="3">Биссоло, Франческо</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="4">Больтраффио, Джованни</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="5">Бонсиньори, Франческо</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="6">Боттичини, Рафаэлло</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="7">Брамантино</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="8">Бреа, Людовико</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="9">Бьяджо д’Антонио Туччи</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="10">Веккьетта</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="11">Андреа Верроккьо</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link catalog-author-link-active " data-author="12">Доменико Гирландайо</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="13">Беноццо Гоццоли</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="14">Граначчи, Франческо</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="15">Грегорио ди Чекко</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="16">Джованни да Удине</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="17">Джованни ди Паоло</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="18">Джорджоне</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="19">Парентино, Бернардо</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="20">Пезеллино</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="21">Пьетро Перуджино</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="22">Перуцци, Бальдассаре</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="23">Пизанелло</a></li>
+                      <li class="catalog-autor-item"><a class="catalog-autor-link" data-author="24">Пинтуриккьо</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="catalog-dates-item">
+                  <h3 class="catalog-dates">C 1500 по 1599 гг.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum hic odio cupiditate tempora, pariatur nisi, molestiae amet reprehenderit eveniet autem ullam dolorem numquam recusandae dicta accusantium tempore omnis porro velit!</p>
+                </li>
+                <li class="catalog-dates-item">
+                  <h3 class="catalog-dates">C 1600 по 1699 гг.</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus commodi distinctio quas placeat dicta sunt esse velit, a, recusandae quasi quisquam omnis sit illo itaque? Soluta odio assumenda consequuntur accusantium.</p>
+                </li>
+                <li class="catalog-dates-item">
+                  <h3 class="catalog-dates">C 1700 по 1799 гг.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aliquid fuga distinctio reiciendis dolor rem reprehenderit odit laboriosam molestias et ex quod ullam, veritatis repellat! Debitis necessitatibus repudiandae impedit culpa!</p>
+                </li>
+                <li class="catalog-dates-item">
+                  <h3 class="catalog-dates">C 1800 по 1899 гг.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minima veritatis, totam molestiae, doloremque, quisquam qui voluptate odit sint veniam hic. Sit, ex! Assumenda nam, ipsam similique eius accusantium enim?</p>
+                </li>
+                <li class="catalog-dates-item">
+                  <h3 class="catalog-dates">C 1900 по 1999 гг.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam ullam modi nisi obcaecati? Voluptates quas dicta distinctio error facilis eaque perferendis quibusdam sapiente. Nesciunt nulla nihil dolorem sapiente quia.</p>
+                </li>
+                <li class="catalog-dates-item">
+                  <h3 class="catalog-dates">C 2000 г.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa beatae molestiae illum cumque optio odit, aliquam architecto facilis asperiores, commodi vero porro deleniti voluptatem tempora quam rem sequi neque consequuntur!</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        <div class="catalog-content" data-catalog="bel">BELGIUM</div>
       </div>
     </section>
 
@@ -327,43 +552,53 @@
         <ul class="events-blocks-list">
           <li class="events-blocks-item">
             <img class="events-blocks-img" src="img/event/eventimgone.jpg" alt="">
-            <span class="events-blocks-museum">Музей им. Щусева с 20 марта по 30 апреля</span>
-            <h3 class="events-blocks-name">Книжная гравюра в живом восприятии</h3>
-            <p class="events-blocks-description">Один из ведущих флорентийских художников Кватроченто, основатель
-              художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-            <a class="events-blocks-link" href="">Подробнее</a>
+            <div class="events-blocks-bottom">
+              <span class="events-blocks-museum">Музей им. Щусева <br> с 20 марта по 30 апреля</span>
+              <h3 class="events-blocks-name">Книжная гравюра в живом восприятии</h3>
+              <p class="events-blocks-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+              <a class="events-blocks-link" href="">Подробнее</a>
+            </div>
           </li>
           <li class="events-blocks-item">
             <img class="events-blocks-img" src="img/event/eventimgtwo.jpg" alt="">
-            <span class="events-blocks-museum">ММОМА 24 марта 19:00</span>
-            <h3 class="events-blocks-name">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-            <p class="events-blocks-description">Высокий уровень вовлечения представителей целевой аудитории является
-              четким доказательством простого факта.</p>
-            <a class="events-blocks-link" href="">Подробнее</a>
+            <div class="events-blocks-bottom">
+              <span class="events-blocks-museum">ММОМА <br> 24 марта 19:00</span>
+              <h3 class="events-blocks-name">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+              <p class="events-blocks-description">Высокий уровень вовлечения представителей целевой аудитории является
+                четким доказательством простого факта.</p>
+              <a class="events-blocks-link" href="">Подробнее</a>
+            </div>
           </li>
           <li class="events-blocks-item">
             <img class="events-blocks-img" src="img/event/eventimgthree.jpg" alt="">
-            <span class="events-blocks-museum">Еврейский музей с 31 марта по 21 апреля</span>
-            <h3 class="events-blocks-name">Выставка «Формация 2020»</h3>
-            <p class="events-blocks-description">Идейные соображения высшего порядка, а также современная методология
-              разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
-            <a class="events-blocks-link" href="">Подробнее</a>
+            <div class="events-blocks-bottom">
+              <span class="events-blocks-museum">Еврейский музей <br> с 31 марта по 21 апреля</span>
+              <h3 class="events-blocks-name">Выставка «Формация 2020»</h3>
+              <p class="events-blocks-description">Идейные соображения высшего порядка, а также современная методология
+                разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+              <a class="events-blocks-link" href="">Подробнее</a>
+            </div>
           </li>
           <li class="events-blocks-item">
             <img class="events-blocks-img" src="img/event/eventimgfour.jpg" alt="">
-            <span class="events-blocks-museum">Третьяковка на Крымском валу с 30 марта по 30 апреля</span>
-            <h3 class="events-blocks-name">XXIV Международная биеннале молодого искусства</h3>
-            <p class="events-blocks-description">Внезапно, реплицированные с зарубежных источников, современные
-              исследования.</p>
-            <a class="events-blocks-link" href="">Подробнее</a>
+            <div class="events-blocks-bottom">
+              <span class="events-blocks-museum">Третьяковка на Крымском валу <br> с 30 марта по 30 апреля</span>
+              <h3 class="events-blocks-name">XXIV Международная биеннале молодого искусства</h3>
+              <p class="events-blocks-description">Внезапно, реплицированные с зарубежных источников, современные
+                исследования.</p>
+              <a class="events-blocks-link" href="">Подробнее</a>
+            </div>
           </li>
           <li class="events-blocks-item">
             <img class="events-blocks-img" src="img/event/eventimgfive.jpg" alt="">
-            <span class="events-blocks-museum">ММАМ с 8 апреля по 20 мая</span>
-            <h3 class="events-blocks-name">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-            <p class="events-blocks-description">Один из ведущих флорентийских художников Кватроченто, основатель
-              художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-            <a class="events-blocks-link" href="">Подробнее</a>
+            <div class="events-blocks-bottom">
+              <span class="events-blocks-museum">ММАМ <br> с 8 апреля по 20 мая</span>
+              <h3 class="events-blocks-name">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+              <p class="events-blocks-description">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+              <a class="events-blocks-link" href="">Подробнее</a>
+            </div>
           </li>
         </ul>
         <button class="events-btn">Все события</button>
@@ -629,6 +864,17 @@
         nextEl: '.swiper-button-next-gallery',
         prevEl: '.swiper-button-prev-gallery',
       },
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#accordion, #accordion2,  #accordion3,  #accordion4,  #accordion5").accordion({
+        collapsible: true,
+        heightStyle: "content"
+      });
     });
   </script>
 
